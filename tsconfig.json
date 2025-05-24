@@ -21,7 +21,15 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": "src/",
+    "paths": {
+      "@/*": ["*"],
+      "@/lib/*": ["lib/*"],
+      "@/components/*": ["components/*"],
+      "@/auth": ["lib/auth"],
+      "@/auth/*": ["lib/auth/*"],
+    },
   },
   "include": [
     "next-env.d.ts",
