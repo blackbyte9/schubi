@@ -3,7 +3,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "tsx prisma/seed.ts"
   },
   "name": "schubi",
   "version": "0.0.1",
@@ -11,16 +12,21 @@
   "author": "Black Byte <blackbyte9@gmx.net>",
   "license": "MIT",
   "dependencies": {
+    "@prisma/client": "^6.8.2",
     "next": "^15.1.8",
     "next-auth": "^5.0.0-beta.28",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@types/node": "22.15.21",
     "@types/react": "19.1.5",
+    "axios": "^1.9.0",
     "eslint": "9.27.0",
     "eslint-config-next": "15.1.8",
+    "prisma": "^6.8.2",
+    "tsx": "^4.19.4",
     "typescript": "5.8.3"
   }
 }

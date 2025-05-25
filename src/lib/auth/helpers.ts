@@ -1,6 +1,5 @@
 "use server";
 
-import { options } from './../../../node_modules/tsconfig-paths/src/options';
 import { signIn as nSignIn, signOut as nSignOut } from "@/auth";
 
 export async function signIn() {
